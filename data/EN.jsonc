@@ -1,0 +1,15 @@
+{
+    "name": "CoDash",
+    "homepage": {
+        "self_assessment": {
+            "self_assessment": "COVID-19 Self Assessment.",
+            "self_assessment_desc": "Using the Self-Assessment tool, you can determine whether or not you should take a COVID-19 test.",
+            "self_assessment_btn": "Take me there"
+        },
+        "vax_data": {
+            "vax_data": "COVID-19 Vaccines",
+            "vax_data_desc": "View updates surrounding the COVID-19 vaccine, and statistics varying from country-to-country.",
+            "vax_data_btn": "Take me there"
+        }
+    }
+}

@@ -1,0 +1,3 @@
+# CoDash - Cross Platform COVID-19 app <img align="right" width="300" src="./CoDash.png" alt="CoDash Logo">
+
+CoDash is a cross-platform, stable and secure COVID-19 monitoring app, dedicated to putting everything that you need about COVID-19 into one app. CoDash has public API endpoints that follow CDC guidelines that are always updated with the change of a JSON file. Perform self-assessments following the CDC guidelines, see COVID-19 cases by country or globally, read current news, and do such more. CoDash is built in Kotlin, C#, C++, TypeScript and Swift, and is available on Android, Windows 10, iOS, WearOS, with future support for Linux. CoDash is powered by the different assortments of APIs, from https://covid19api.com, https://ourworldindata.org, and others. 

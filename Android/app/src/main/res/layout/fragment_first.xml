@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".FirstFragment">
+
+  <TextView
+    android:layout_width="119dp"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/sfbold_font"
+    android:text="CoDash"
+    android:textSize="25dp" />
+
+  <LinearLayout
+    android:layout_width="247dp"
+    android:layout_height="246dp"
+    android:layout_marginTop="40dp"
+    android:gravity="left"
+    android:orientation="vertical">
+
+    <TextView
+      android:layout_width="245dp"
+      android:layout_height="wrap_content"
+      android:id="@+id/SELF_ASSESSMENT_MAIN_TEXT"
+      android:fontFamily="@font/sfbold"
+      android:text="COVID-19 Self-assessment"
+      android:textSize="30dp" />
+
+    <TextView
+      android:id="@+id/self_assessment_short_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="left"
+      android:fontFamily="@font/sfthin"
+      android:gravity="left"
+      android:text="This tool can help you understand if you need to receive a COVID-19 test by answering a couple questions."
+      android:textSize="17dp"
+      android:textStyle="bold" />
+
+    <Button
+      android:id="@+id/TAKE_USER_TO_SELF_ASSESSMENT"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/sfmed"
+      android:text="Take me there"
+      android:textColor="#FFFFFF"
+      android:backgroundTint="#0080FF"
+      app:iconTint="#0080FF"
+      app:rippleColor="#0080FF" />
+  </LinearLayout>
+
+  <ImageView
+    android:id="@+id/imageView2"
+    android:layout_width="128dp"
+    android:layout_height="349dp"
+    android:layout_gravity="right"
+    android:layout_marginTop="-350dp"
+    android:src="@mipmap/person_using_phone" />
+
+</LinearLayout>
