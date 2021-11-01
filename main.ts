@@ -59,9 +59,7 @@ app.get('/api/internal/overview', async (req, res) => {
 
     // get current date in format of json
     let today = (new Date().getFullYear()) + '-' + ((new Date().getMonth()+1).toString()) + '-' + (new Date().getDate()).toString();
-    // yesterday's date (for counter)
     let yesterday = (new Date().getFullYear().toString()) + '-' + ((new Date().getMonth()+1).toString()) + '-' + ((new Date().getDate() - 1)).toString();
-    // two days ago (if today is not available.)
     let twodays = (new Date().getFullYear()) + '-' + ((new Date().getMonth()+1).toString()) + '-' + (new Date().getDate() - 2).toString();
 
     /**********************
