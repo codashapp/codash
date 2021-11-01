@@ -1,5 +1,19 @@
 {
     "name": "CoDash",
+    "loading": {
+        "title": "CoDash",
+        "text": "Loading..",
+        "imageText": "Powered by",
+        "images": [
+            // this assumes the directory assets/
+            // in client versions, they have copies of these.
+            "our_world_in_data.png",
+            "nodejs-new-pantone-black.png",
+            "CoDash.png",
+            "covidapi.png",
+            "person_using_phone.png"
+        ]
+    },
     "homepage": {
         "self_assessment": {
             "self_assessment": "COVID-19 Self Assessment.",

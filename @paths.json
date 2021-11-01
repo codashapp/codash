@@ -1,0 +1,48 @@
+{
+    "countries": "data/countries.json",
+    "languages": [
+        {
+            "lang": "en",
+            "path": "data/EN.jsonc"
+        }
+    ],
+    "rules": "@rules.ini",
+    "downloadedData": "test.txt",
+    "clients": [
+        {
+            "os": "android",
+            "path": "android/"
+        },
+        {
+            "os": "win10",
+            "path": "windows/"
+        },
+        {
+            "os": "ios",
+            "path": "ios/"
+        },
+        {
+            "os": "macos",
+            "path": "mac/"
+        },
+        {
+            "os": "wear",
+            "path": "wear/"
+        },
+        {
+            "os": "linux",
+            "path": "linux/"
+        }
+    ],
+    "build": "build/",
+    "algorithm": "algorithm/",
+    "releaseData": "release.json",
+    "testsDir": "tests/",
+    "ignore": [
+        "docs",
+        "build",
+        "tests",
+        "releases",
+        "node_modules"
+    ]
+}

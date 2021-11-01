@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,58 +7,203 @@
   android:orientation="vertical"
     android:layout_margin="20dp"
     tools:context=".FirstFragment">
-
-  <TextView
-    android:layout_width="119dp"
-    android:layout_height="wrap_content"
-    android:fontFamily="@font/sfbold_font"
-    android:text="CoDash"
-    android:textSize="25dp" />
-
   <LinearLayout
-    android:layout_width="247dp"
-    android:layout_height="246dp"
-    android:layout_marginTop="40dp"
-    android:gravity="left"
-    android:orientation="vertical">
-
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
     <TextView
-      android:layout_width="245dp"
+      android:layout_width="119dp"
       android:layout_height="wrap_content"
-      android:id="@+id/SELF_ASSESSMENT_MAIN_TEXT"
-      android:fontFamily="@font/sfbold"
-      android:text="COVID-19 Self-assessment"
-      android:textSize="30dp" />
+      android:fontFamily="@font/sfbold_font"
+      android:text="CoDash"
+      android:textSize="25dp" />
 
-    <TextView
-      android:id="@+id/self_assessment_short_text"
+    <!-- Begin cases today. -->
+
+    <TableRow
       android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_gravity="left"
-      android:fontFamily="@font/sfthin"
-      android:gravity="left"
-      android:text="This tool can help you understand if you need to receive a COVID-19 test by answering a couple questions."
-      android:textSize="17dp"
-      android:textStyle="bold" />
+      android:layout_height="132dp">
 
-    <Button
-      android:id="@+id/TAKE_USER_TO_SELF_ASSESSMENT"
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+          android:id="@+id/covid_cases_title"
+          android:layout_width="129dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="left"
+          android:text="Cases today in Iceland"
+          android:textSize="18dp" />
+
+        <TextView
+          android:id="@+id/cases_today_count"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="left"
+          android:text="4"
+          android:textColor="#00AA0F"
+          android:textSize="45dp"></TextView>
+
+        <TextView
+          android:id="@+id/compare_yesterday"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="left"
+          android:layout_marginLeft="15dp"
+          android:text="3 less from yesterday."
+          android:textSize="15dp" />
+
+        <ImageView
+          android:layout_width="12dp"
+          android:layout_height="15dp"
+          android:layout_gravity="left"
+          android:layout_marginTop="-16dp"
+          android:src="@mipmap/down_arrow_foreground" />
+      </LinearLayout>
+
+      <!-- Begin vaccines today. -->
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="44dp"
+          android:layout_gravity="right"
+          android:layout_marginLeft="20dp"
+          android:gravity="right"
+          android:text="Vaccines given in Iceland"
+          android:textSize="18dp" />
+
+        <TextView
+          android:id="@+id/vax_today_count"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="left"
+          android:gravity="right"
+          android:text="4"
+
+          android:textColor="#00AA0F"
+          android:textSize="45dp" />
+
+        <TextView
+          android:id="@+id/compare_yesterday_vax"
+          android:layout_width="wrap_content"
+          android:layout_height="33dp"
+          android:layout_gravity="left"
+          android:layout_marginLeft="35dp"
+          android:text="3 more from yesterday."
+          android:textSize="15dp" />
+
+        <ImageView
+          android:layout_width="12dp"
+          android:layout_height="15dp"
+          android:layout_gravity="left"
+          android:scaleY="-1"
+          android:layout_marginLeft="19dp"
+          android:layout_marginTop="-30dp"
+          android:src="@mipmap/down_arrow_foreground" />
+      </LinearLayout>
+    </TableRow>
+
+    <!-- Begin features (self-assessment, vaccine rollout, etc.) -->
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="246dp"
+      android:layout_marginTop="40dp"
+      android:gravity="left"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/SELF_ASSESSMENT_MAIN_TEXT"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sfbold"
+        android:text="COVID-19 Self-assessment"
+        android:textSize="30dp" />
+
+      <TextView
+        android:id="@+id/self_assessment_short_text"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:fontFamily="@font/sfmed"
+        android:gravity="left"
+        android:text="This tool can help you understand if you need to receive a COVID-19 test by answering a couple questions."
+        android:textSize="17dp" />
+
+      <Button
+        android:id="@+id/TAKE_USER_TO_SELF_ASSESSMENT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0080FF"
+        android:fontFamily="@font/sfmed"
+        android:text="Take me there"
+        android:textColor="#FFFFFF"
+        app:iconTint="#0080FF"
+        app:rippleColor="#0080FF" />
+
+      <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="128dp"
+        android:layout_height="271dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="-280dp"
+        android:src="@mipmap/person_using_phone" />
+    </LinearLayout>
+    <!-- Begin Vaccine App -->
+    <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:fontFamily="@font/sfmed"
-      android:text="Take me there"
-      android:textColor="#FFFFFF"
-      android:backgroundTint="#0080FF"
-      app:iconTint="#0080FF"
-      app:rippleColor="#0080FF" />
+      android:gravity="right"
+      android:layout_gravity="right"
+      android:orientation="vertical">
+      <TextView
+        android:id="@+id/COV_DATA_TEXT"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sfbold"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:textAlignment="gravity"
+        android:text="COVID-19 Cases and Data"
+        android:textSize="30dp" />
+
+      <TextView
+        android:id="@+id/cov_data_short_text"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:fontFamily="@font/sfmed"
+        android:gravity="right"
+        android:text="View statistics on COVID-19 cases, vaccinations, and tests by country. This updated daily."
+        android:textSize="17dp" />
+
+      <Button
+        android:id="@+id/TAKE_USER_TO_COV_DATA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0080FF"
+        android:fontFamily="@font/sfmed"
+        android:text="Take me there"
+        android:textColor="#FFFFFF"
+        app:iconTint="#0080FF"
+        app:rippleColor="#0080FF" />
+
+      <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="-150dp"
+        android:src="@mipmap/graph_img_foreground" />
+
+    </LinearLayout>
+
   </LinearLayout>
-
-  <ImageView
-    android:id="@+id/imageView2"
-    android:layout_width="128dp"
-    android:layout_height="349dp"
-    android:layout_gravity="right"
-    android:layout_marginTop="-350dp"
-    android:src="@mipmap/person_using_phone" />
-
-</LinearLayout>
+</ScrollView>

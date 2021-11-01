@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "era ",
   "license": "BSD-3-Clause",
+  "scripts": {
+    "dev": "npx ts-node-dev --respawn main.ts",
+    "start": "npx tsc main.ts && node main.js"
+  },
   "dependencies": {
     "axios": "^0.24.0",
     "chalk": "^4.1.2",
